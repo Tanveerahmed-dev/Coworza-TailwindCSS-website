@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworza</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg" href="coworza.svg">
+</head>
+
+<body class="text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="flex justify-between items-center px-16 py-5 bg-white shadow-sm">
+        <div class="flex items-center gap-2">
+            <img src="coworza.svg" alt="logo" class="w-12 mr-8">
+        </div>
+
+        <ul class="hidden md:flex gap-10 text-lg">
+            <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+            <li><a href="workspace.html" class="text-orange-500 font-semibold">Workspace</a></li>
+            <li><a href="#" class="hover:text-orange-500">Facilities</a></li>
+            <li><a href="#" class="hover:text-orange-500">Meeting Room</a></li>
+            <li><a href="#" class="hover:text-orange-500">Visit Us</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <button class="px-5 py-2 border border-orange-500 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white">
+                Login
+            </button>
+        </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+<section class="hero text-center py-16 bg-gray-50">
+    <h1 class="text-4xl font-bold text-gray-800">Find the Right Workspace for You</h1>
+    <p class="text-gray-600 mt-4">
+        Choose from beautifully designed spaces built for productivity, comfort, and collaboration.
+    </p>
+</section>
+
+<!-- WORKSPACES SECTION -->
+<section class="workspaces-section py-16 bg-white">
+    <div class="section-header text-center mb-10">
+        <h1 class="text-3xl font-bold text-gray-800">Available Workspaces</h1>
+        <p class="text-gray-600 mt-2">
+            Browse and book desks, meeting rooms, and private offices tailored to your needs
+        </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="workspaces-grid max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- CARD 1 -->
+        <div class="workspace-card bg-white shadow-lg rounded-xl p-5 hover:shadow-xl transition">
+            
+            <h3 class="workspace-title text-xl font-bold text-gray-800 mb-3">
+                <i class="fa-solid fa-desktop text-orange-500 mr-2"></i> Table No 1
+            </h3>
+
+            <div class="workspace-image relative">
+                <span class="status absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-md">ACTIVE</span>
+                <img src="about-img.webp" alt="Workspace Image" class="rounded-lg w-full h-48 object-cover">
+            </div>
+
+            <!-- PRICES -->
+            <div class="prices mt-4 flex flex-col gap-1 text-gray-700">
+                <span class="day font-semibold">PKR 1000.00/day</span>
+                <span class="week">PKR 6000.00/week</span>
+                <span class="month">PKR 25000.00/month</span>
+            </div>
+
+            <!-- AMENITIES -->
+            <div class="amenities mt-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Amenities</h4>
+                <div class="flex gap-2">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">WIFI</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">COFFEE</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">MONITOR</span>
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <button class="book-btn mt-5 w-full bg-orange-500 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition">
+                <i class="fa-solid fa-calendar-check mr-2"></i> Book Now
+            </button>
+
+            <!-- RATING -->
+            <div class="rating mt-4 text-gray-600 text-sm">
+                <span class="text-yellow-500 text-lg">★★★★★</span> 
+                <span>0.0 (0 reviews)</span>
+                <p class="mt-1 text-gray-400">No reviews yet</p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="workspace-card bg-white shadow-lg rounded-xl p-5 hover:shadow-xl transition">
+            
+            <h3 class="workspace-title text-xl font-bold text-gray-800 mb-3">
+                <i class="fa-solid fa-desktop text-orange-500 mr-2"></i> Table No 2
+            </h3>
+
+            <div class="workspace-image relative">
+                <span class="status absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-md">ACTIVE</span>
+                <img src="e-space.webp" alt="Workspace Image" class="rounded-lg w-full h-48 object-cover">
+            </div>
+
+            <div class="prices mt-4 flex flex-col gap-1 text-gray-700">
+                <span class="day font-semibold">PKR 1000.00/day</span>
+                <span class="week">PKR 6000.00/week</span>
+                <span class="month">PKR 25000.00/month</span>
+            </div>
+
+            <div class="amenities mt-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Amenities</h4>
+                <div class="flex gap-2">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">WIFI</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">COFFEE</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">MONITOR</span>
+                </div>
+            </div>
+
+            <button class="book-btn mt-5 w-full bg-orange-500 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition">
+                <i class="fa-solid fa-calendar-check mr-2"></i> Book Now
+            </button>
+
+            <div class="rating mt-4 text-gray-600 text-sm">
+                <span class="text-yellow-500 text-lg">★★★★★</span> 
+                <span>0.0 (0 reviews)</span>
+                <p class="mt-1 text-gray-400">No reviews yet</p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="workspace-card bg-white shadow-lg rounded-xl p-5 hover:shadow-xl transition">
+            
+            <h3 class="workspace-title text-xl font-bold text-gray-800 mb-3">
+                <i class="fa-solid fa-desktop text-orange-500 mr-2"></i> Table No 3
+            </h3>
+
+            <div class="workspace-image relative">
+                <span class="status absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-md">ACTIVE</span>
+                <img src="sitting.webp" alt="Workspace Image" class="rounded-lg w-full h-48 object-cover">
+            </div>
+
+            <div class="prices mt-4 flex flex-col gap-1 text-gray-700">
+                <span class="day font-semibold">PKR 1000.00/day</span>
+                <span class="week">PKR 6000.00/week</span>
+                <span class="month">PKR 25000.00/month</span>
+            </div>
+
+            <div class="amenities mt-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Amenities</h4>
+                <div class="flex gap-2">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">WIFI</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">COFFEE</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm">MONITOR</span>
+                </div>
+            </div>
+
+            <button class="book-btn mt-5 w-full bg-orange-500 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition">
+                <i class="fa-solid fa-calendar-check mr-2"></i> Book Now
+            </button>
+
+            <div class="rating mt-4 text-gray-600 text-sm">
+                <span class="text-yellow-500 text-lg">★★★★★</span> 
+                <span>0.0 (0 reviews)</span>
+                <p class="mt-1 text-gray-400">No reviews yet</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#DBE6E6] text-black-300 py-14 px-8 md:px-20">
+        <div class="grid md:grid-cols-4 gap-10">
+
+            <div>
+                 <img src="coworza.svg" alt="logo" class="w-20">
+                <p class="mb-4">Modern coworking spaces for forward-thinkers.</p>
+                <p>📍 Rawalpindi, Pakistan</p>
+                <p>📞 +92 327 7834010</p>
+                <p>📧 contact@coworza.com</p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-black-300 mb-4">Explore</h3>
+                <ul class="space-y-2">
+                    <li>Home</li>
+                    <li>Workspace</li>
+                    <li>Facilities</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-black-300 mb-4">Member Area</h3>
+                <ul class="space-y-2">
+                    <li>Profile</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-black-300 mb-4">Legal</h3>
+                <ul class="space-y-2">
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="text-center text-gray-500 mt-10">
+            © 2025 Coworza. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
